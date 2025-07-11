@@ -46,7 +46,7 @@ const getInfos = function () {
               <p class="card-text my-1 fst-italic"><span class="fw-bold fst-normal">Description:</span> ${product.description}</p>
               <p class="card-text my-1 fst-italic"><span class="fw-bold fst-normal">Price:</span> ${product.price} €</p>
               </div>
-              <a href="./detail.html?productId=${product._id}" class="btn btn-dark mt-2 fw-bold text-danger"><i class="fas fa-info-circle"></i> Check details HERE</a>
+              <a href="./details.html?productId=${product._id}" class="btn btn-dark mt-2 fw-bold text-danger"><i class="fas fa-info-circle"></i> Check details HERE</a>
             </div>
           </div>
           `
