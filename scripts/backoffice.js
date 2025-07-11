@@ -9,12 +9,16 @@ const endPoint = `https://striveschool-api.herokuapp.com/api/product/`
 const authorizationLink = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODcwYmIzMjc4Y2RkZjAwMTU1ZDY3OWYiLCJpYXQiOjE3NTIyMTg0MTgsImV4cCI6MTc1MzQyODAxOH0.lkfAgPfvfUDCpsrHOcn2YILZ-vu_ug21gI7fwA-pGcE`
 
 const parameters = new URLSearchParams(location.search)
-const productID = parameters.get(`productID`)
+const productId = parameters.get(`productId`)
 
 // ----------
 
-if (productID) {
-  fetch(endPoint + `/` + productID)
+if (productId) {
+  fetch(endPoint + `/` + productId, {
+    headers: {
+      Authorization: authorizationLink,
+    },
+  })
     .then(function (response) {
       if (response.ok) {
         return response.json()
@@ -74,14 +78,14 @@ productForm.addEventListener(`submit`, function (e) {
   // ----------
 
   let endpointToUse
-  if (productID) {
-    endpointToUse = endPoint + `/` + productID
+  if (productId) {
+    endpointToUse = endPoint + `/` + productId
   } else {
     endpointToUse = endPoint
   }
 
   let apiCallMethod
-  if (productID) {
+  if (productId) {
     apiCallMethod = `PUT`
   } else {
     apiCallMethod = `POST`

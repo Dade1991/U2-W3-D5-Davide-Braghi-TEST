@@ -27,11 +27,12 @@
       >
         <div class="container-fluid">
           <div>
-            <img
-              src="../assets/img/—Pngtree—retro gameboy icon_15957531.png"
-              alt=""
-              style="height: 150px"
-            />
+            <a href="./homepage.html"
+              ><img
+                src="../assets/img/—Pngtree—retro gameboy icon_15957531.png"
+                alt=""
+                style="height: 150px"
+            /></a>
           </div>
           <button
             class="navbar-toggler"
@@ -82,10 +83,33 @@
     <main class="flex-grow-1">
       <section>
         <div class="container">
-          <div
-            id="collection-Row"
-            class="row justify-content-center my-4 g-5"
-          ></div>
+          <div id="collection-Row" class="row my-4 g-5">
+            <div class="col-12 col-md-6 offset-md-3">
+              <div class="card">
+                <img src="" class="card-img-top" alt="Image of the Console" />
+                <div class="card-body text-center">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                  <div>
+                    <button
+                      onclick="editProduct()"
+                      class="btn btn-dark fw-bold text-Mod"
+                    >
+                      MODIFY Element
+                    </button>
+                    <button
+                      onclick="deleteProduct()"
+                      class="btn btn-dark fw-bold text-danger"
+                    >
+                      DELETE Element
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -100,6 +124,6 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    <script src="../scripts/homepage.js"></script>
+    <script src="../scripts/details.js"></script>
   </body>
 </html>

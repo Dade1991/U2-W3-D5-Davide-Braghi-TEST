@@ -35,7 +35,7 @@ const getInfos = function () {
       </div>`
       } else {
         arrayOfInfos.forEach((product) => {
-          console.log(`Product`, product)
+          console.log(`Product`, product._id)
           mainRowCollection.innerHTML += `<div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100 d-flex flex-column">
             <img src="${product.imageUrl}" class="card-img-top" alt="RetroArch console">
@@ -46,7 +46,7 @@ const getInfos = function () {
               <p class="card-text my-1 fst-italic"><span class="fw-bold fst-normal">Description:</span> ${product.description}</p>
               <p class="card-text my-1 fst-italic"><span class="fw-bold fst-normal">Price:</span> ${product.price} €</p>
               </div>
-              <a href="#" class="btn btn-dark mt-2 fw-bold text-danger"><i class="fas fa-info-circle"></i> Check details HERE</a>
+              <a href="./detail.html?productId=${product._id}" class="btn btn-dark mt-2 fw-bold text-danger"><i class="fas fa-info-circle"></i> Check details HERE</a>
             </div>
           </div>
           `
