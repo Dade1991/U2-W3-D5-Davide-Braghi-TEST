@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* font-family: "Honk", system-ui; */
+
+@import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap");
+
+body {
+  min-height: 100vh !important;
+  background-image: url(../assets/img/—Pngtree—geometric\ purple\ background\ with\ modern_1243070.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Honk", system-ui;
+  font-size: 5em;
+}
+
+h2 {
+  font-family: "Turret Road", sans-serif;
+}
+
+.navbar {
+  box-shadow: 0px 0px 50px 5px #ff40af !important;
+}
+
+.navbar-dark {
+  background-color: black !important;
+}
+
+.nav-btn {
+  color: #ff40af !important;
+  border-color: #ff40af !important;
+}
+
+.card {
+  box-shadow: 5px 5px 40px #ff40af !important;
+  transition: all 0.25s ease-in-out;
+  background-color: #ffff7d;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-title {
+  color: #ff40af !important;
+}
+
+.shadow-sm {
+  box-shadow: 0px 0px 25px #ff40af !important;
+}
+
+.text-danger {
+  color: #ff40af !important;
+}
+
+.year-Span {
+  color: #ff40af !important;
+}
+
+.footer-dark {
+  background-color: black !important;
+}
+
+.fa-terminal {
+  color: #ffff7d;
+}
+
+footer {
+  box-shadow: 0px 0px 50px 5px #ff40af !important;
+}

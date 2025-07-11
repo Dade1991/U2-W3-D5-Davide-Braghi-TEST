@@ -11,15 +11,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../sass/cssImportant.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body class="d-flex flex-column">
+  <body class="vh-100 d-flex flex-column">
     <header>
       <nav
         class="navbar navbar-dark navbar-expand-lg bg-body-tertiary fs-5 fw-bolder"
@@ -47,15 +41,10 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./homepage.html"
-                  >Homepage</a
-                >
+                <a class="nav-link" aria-current="page" href="./homepage.html">Homepage</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./backoffice.html">Backoffice</a>
+                <a class="nav-link active" href="./backoffice.html">Backoffice</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -65,38 +54,46 @@
                 placeholder="Search here..."
                 aria-label="Search"
               />
-              <button class="btn btn-outline-info nav-btn" type="submit">
-                Search
-              </button>
+              <button class="btn btn-outline-info nav-btn" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
       <section class="text-center my-5">
         <h1>Retro Arch Gaming e-SHOP</h1>
-        <h2 class="text-light fs-3 my-5">
-          <i class="fas fa-terminal"></i> Feel nostalgic yet? New gaming
-          consoles are boring?
-          <br />
-          <i class="fas fa-terminal"></i> Then check-out our collection of
-          RetroArch gaming consoles!!
-        </h2>
+        <h2 class="text-light fs-3 my-5"><i class="fas fa-terminal"></i> Backoffice MENU</h2>
       </section>
     </header>
     <main class="flex-grow-1">
       <section>
         <div class="container">
-          <div
-            id="collection-Row"
-            class="row justify-content-center my-4 g-5"
-          ></div>
+          <div class="row justify-content-center my-4 g-3"></div>
+            <div class="col-12 col-md-6 offset-md-3 text-light">
+              <form id="product-Form">
+                <div class="mb-3 fs-5 fw-bold">
+                  <label for="brand" class="form-label">Brand:</label>
+                  <input type="text" class="form-control mb-3 shadow-sm" id="brand" aria-describedby="brand" required>
+                  <label for="name" class="form-label">Model:</label>
+                  <input type="text" class="form-control mb-3 shadow-sm" id="name" aria-describedby="name" required>
+                  <label for="description" class="form-label">Description:</label>
+                  <input type="text" class="form-control mb-3 shadow-sm" id="description" aria-describedby="description" required>
+                  <label for="price" class="form-label">Price:</label>
+                  <input type="number" class="form-control mb-3 shadow-sm" id="price" aria-describedby="price" required>
+                  <label for="imgUrl" class="form-label">Image URL Link:</label>
+                  <input type="text" class="form-control mb-3 shadow-sm" id="imgUrl" aria-describedby="imgUrl" required>
+                </div>
+                <div class="text-center text-md-end">
+                  <button type="submit" class="btn btn-success mt-5 px-4 fs-5 fw-bold shadow-sm">Save</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="bg-dark footer-dark">
       <p class="text-center text-light py-4 m-0 fs-6 fst-italic">
-        RetroArchGaming &reg; -
-        <span class="fw-bold year-Span" id="year"></span>
+        RetroArchGaming &reg; - <span class="fw-bold year-Span" id="year"></span>
       </p>
     </footer>
     <script
@@ -104,6 +101,6 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    <script src="../scripts/homepage.js"></script>
+    <script src="../scripts/backoffice.js"></script>
   </body>
 </html>
